@@ -5,7 +5,7 @@ CC=gcc
 CFLAGS=-g -Wall -lpigpio -lrt -lpthread
 
 default:
-	$(CC) $(CFLAGS) -o light_switch light_switch_main.c rotary_encoder.c read_temp.c room_controls.c 
+	$(CC) $(CFLAGS) -o room_controller room_controller.c rotary_encoder.c read_temp.c control_temp.c switch_outlet.c
 
 clean:
-	rm -f light_switch
+	rm -f room_controller
